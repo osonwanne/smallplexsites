@@ -1,4 +1,6 @@
-{% load static wagtailuserbar %}
+{% load static wagtailuserbar bootstrap_themes %}
+
+{% bootstrap_styles theme='default' type='min.css' %}
 
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -20,25 +22,92 @@
         </title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--<link rel="icon" href="https://s3-us-west-2.amazonaws.com/virgilglobal/Virgil-icon.png">-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
         {# Global stylesheets #}
-        <link rel="stylesheet" type="text/css" href="{% static 'css/smallplexsites.css' %}">
+{#        <link rel="stylesheet" type="text/css" href="{% static 'css/akilunaphotography.css' %}">#}
 
         {% block extra_css %}
             {# Override this in templates to add extra stylesheets #}
         {% endblock %}
     </head>
 
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Smallplex
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Shares</a>
+                    </li>
+                    <li>
+                        <a href="/#">Investor</a>
+                    </li>
+{#                    <li>#}
+{#                        <a href="/blog">Blog</a>#}
+{#                    </li>#}
+                    <li>
+                        <a href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <br>
+
+    <br>
+
+    <br>
+
+        <!-- Page Content -->
+    <div class="container">
+
     <body class="{% block body_class %}{% endblock %}">
         {% wagtailuserbar %}
 
         {% block content %}{% endblock %}
 
+            <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Smallplex Properties</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+        <!--  Scripts-->
+        <script data-after="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script data-after="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+
+
         {# Global javascript #}
-        <script type="text/javascript" src="{% static 'js/smallplexsites.js' %}"></script>
+{#        <script type="text/javascript" src="{% static 'js/akilunaphotography.js' %}"></script>#}
 
         {% block extra_js %}
             {# Override this in templates to add extra javascript #}
         {% endblock %}
+
+        {% bootstrap_script use_min=True %}
+
     </body>
 </html>
