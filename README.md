@@ -5,7 +5,7 @@ Smallplex - Shares and Investor landing page, with links/redirects to separate w
 
 **Set-up and installation:**
 
-1. git clone https://github.com/osonwanne/virgilglobal.git
+1. git clone https://github.com/osonwanne/smallplexsites.git
 
 2. cd virgilglobal
 
