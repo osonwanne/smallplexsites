@@ -54,7 +54,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.treebeard',
-    'medCE.delib'
     # 'django.contrib.sites',
 
     'bootstrap_themes',
