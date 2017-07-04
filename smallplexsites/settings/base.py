@@ -25,6 +25,8 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 
 # Application definition
 
+ALLOWED_HOSTS = ['*']
+
 INSTALLED_APPS = [
     'home',
     'search',
@@ -40,6 +42,7 @@ INSTALLED_APPS = [
     'wagtail.wagtailsearch',
     'wagtail.wagtailadmin',
     'wagtail.wagtailcore',
+    'wagtail.contrib.modeladmin',
 
     'modelcluster',
     'taggit',
@@ -50,11 +53,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # 'django.contrib.sites',
 
     'bootstrap_themes',
     'bootstrap3',
     'contact'
 ]
+
+# SITE_ID = 1
 
 MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
