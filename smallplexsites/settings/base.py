@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.treebeard',
     # 'django.contrib.sites',
 
     'bootstrap_themes',
