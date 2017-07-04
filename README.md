@@ -28,3 +28,5 @@ Smallplex - Shares and Investor landing page, with links/redirects to separate w
 7. python manage.py collectstatic
 
 8. python manage.py runserver
+
+* Update host with Sendgrid credentials in base.py settings
