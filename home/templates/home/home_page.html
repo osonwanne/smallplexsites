@@ -3,9 +3,126 @@
 {% block body_class %}template-homepage{% endblock %}
 
 {% block content %}
-    <h1>Welcome to your new Wagtail site!</h1>
 
-    <p>You can access the admin interface <a href="{% url 'wagtailadmin_home' %}">here</a> (make sure you have run "./manage.py createsuperuser" in the console first).</p>
+{#    <!-- Full Width Image Header with Logo -->#}
+{#    <!-- Image backgrounds are set within the full-width-pics.css file. -->#}
+{#    <header class="image-bg-fluid-height">#}
+{#        <img class="img-responsive img-center" src="http://placehold.it/200x200&text=Logo" alt="">#}
+{#    </header>#}
 
-    <p>If you haven't already given the documentation a read, head over to <a href="http://docs.wagtail.io/">http://docs.wagtail.io</a> to start building on Wagtail</p>
+    <!-- Content Section -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="section-heading">Smallplex - Shares</h1>
+                    <p class="lead section-lead">Smallplex Shares lets you own fractional shares in a portfolio of cash-flow generating multi-family properties.</p>
+{#                    <p class="section-paragraph">Smallplex Shares lets you own fractional shares in a portfolio of cash-flow generating multi-family properties.</p>#}
+                    <a href="#" class="btn btn-primary btn-lg">Shares</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{#    <!-- Fixed Height Image Aside -->#}
+{#    <!-- Image backgrounds are set within the full-width-pics.css file. -->#}
+{#    <aside class="image-bg-fixed-height"></aside>#}
+
+    <br>
+
+    <!-- Content Section -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="section-heading">Smallplex - Investor</h1>
+                    <p class="lead section-lead">Smallplex Investor makes it easy to get started, manage and build a portfolio of cash-flow generating properties.</p>
+{#                    <p class="section-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>#}
+                <a href="#" class="btn btn-primary btn-lg">Investor</a>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <br>
+
+    <br>
+
+    <br>
+
+
+        <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyright &copy; Smallplex Properties</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <style>
+
+    /*
+     * Start Bootstrap - Full Width Pics (http://startbootstrap.com/)
+     * Copyright 2013-2016 Start Bootstrap
+     * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+     */
+
+    body {
+        margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+
+    .image-bg-fluid-height,
+    .image-bg-fixed-height {
+        text-align: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+
+    body{
+        background: url(https://s3-us-west-2.amazonaws.com/smallplex/pexels-photo-83499.jpeg) no-repeat fixed;
+        background-size: cover;
+    }
+
+    .img-center {
+        margin: 0 auto;
+    }
+
+    section {
+        padding: 50px 0;
+    }
+
+    .section-heading {
+        margin: 0px 0;
+        font-size: 4em;
+    }
+
+    .section-lead {
+        margin: 20px 0;
+    }
+
+    .section-paragraph {
+        margin: 20px 0;
+    }
+
+    footer {
+        margin: 50px 0;
+    }
+
+    @media(max-width:768px) {
+        section {
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+
+        .section-heading {
+            font-size: 2em;
+        }
+    }
+    </style>
 {% endblock %}
