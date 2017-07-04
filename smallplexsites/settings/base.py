@@ -52,6 +52,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'bootstrap_themes',
+    'bootstrap3',
+    'contact'
 ]
 
 MIDDLEWARE = [
@@ -141,4 +143,23 @@ WAGTAIL_SITE_NAME = "smallplexsites"
 
 # Base URL to use when referring to full URLs within the Wagtail admin backend -
 # e.g. in notification emails. Don't include '/admin' or a trailing slash
-BASE_URL = 'http://example.com'
+BASE_URL = 'http://smallplex.com'
+
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_HOST = 'smtp.sendgrid.net'
+# EMAIL_HOST_USER = 'username'
+# EMAIL_HOST_PASSWORD = 'pswd'
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = '{{email_user}}'
+EMAIL_HOST_PASSWORD = '{{email_password}}'
+DEFAULT_FROM_EMAIL = ''
+SERVER_EMAIL = ''
+
+# EMAIL_BACKEND = "sgbackend.SendGridBackend"
+# SENDGRID_API_KEY = "Your SendGrid API Key"
