@@ -1,6 +1,6 @@
 Django
-wagtail
 django-treebeard
+wagtail
 django-bootstrap-themes
 django-bootstrap3
 django-taggit
