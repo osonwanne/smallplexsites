@@ -7,7 +7,7 @@ Smallplex - Shares and Investor landing page, with links/redirects to separate w
 
 1. git clone https://github.com/osonwanne/smallplexsites.git
 
-2. cd virgilglobal
+2. cd smallplexsites
 
 3. virtualenv .
 
